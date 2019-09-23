@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+	font-family: product_sansregular;
+	background-color: #cccccc;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
