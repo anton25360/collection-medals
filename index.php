@@ -25,6 +25,7 @@ foreach ($events as $eventTable) {
     echo '<p> Event: ' . $event . ', '. $year . '. You came ' . $place . $message . '</p>';
 }
 
+echo $_POST['event'].$_POST['year'].$_POST['place'];
 
 ?>
 <!DOCTYPE html>
