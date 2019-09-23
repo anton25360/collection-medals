@@ -1,4 +1,6 @@
 <?php
+//todo add functions file
+require "functions.php";
 
 $db = new PDO('mysql:host=db;dbname=collection','root','password');
 $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -25,7 +27,7 @@ foreach ($events as $eventTable) {
     echo '<p> Event: ' . $event . ', '. $year . '. You came ' . $place . $message . '</p>';
 }
 
-echo $_POST['event'].$_POST['year'].$_POST['place'];
+echo addEvent($_POST['event'],$_POST['year'],$_POST['place']);
 
 ?>
 <!DOCTYPE html>
