@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.27)
 # Database: collection
-# Generation Time: 2019-09-23 12:22:04 +0000
+# Generation Time: 2019-09-23 13:01:56 +0000
 # ************************************************************
 
 
@@ -25,9 +25,9 @@
 
 CREATE TABLE `events` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `event` text,
-  `year` int(11) DEFAULT NULL,
-  `place` int(11) DEFAULT NULL,
+  `event` text NOT NULL,
+  `year` int(11) NOT NULL,
+  `place` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
