@@ -41,7 +41,6 @@ echo addEvent($_POST['event'],$_POST['year'],$_POST['place']);
 <body>
 
 <br>
-<div class="wrapper">
     <form method="post">
         <p2>Add an event:</p2>
         <input type="text" name="event" placeholder="Cycling">
@@ -49,6 +48,5 @@ echo addEvent($_POST['event'],$_POST['year'],$_POST['place']);
         <input type="text" name="place" placeholder="1st">
         <input type="submit" value="Add">
     </form>
-</div>
 
 </body>
