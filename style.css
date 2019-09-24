@@ -1,15 +1,20 @@
 * {
 	box-sizing: border-box;
 	font-family: product_sansregular;
+
 }
 
 body{
 	margin: 0;
 	padding: 0;
+
 }
 
 html{
-	background-color: gray;
+	/*background-color: gray;*/
+	background-image: linear-gradient(to bottom, #000046 , #1CB5E0);
+	height: 100%;
+
 }
 
 p{
@@ -28,4 +33,18 @@ form{
 	background-color: white;
 	display: inline-block;
 	border-radius: 10px;
+}
+
+a{
+	border: 2px solid black;
+	font-size: 18px;
+	border-radius: 20px;
+	padding: 25px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 40px;
+	background-image: linear-gradient(to right, #0cebeb , #29ffc6);
+	text-decoration: none;
+	color: black;
 }

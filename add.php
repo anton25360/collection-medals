@@ -23,8 +23,10 @@
     </label>
 
     <input type="submit" name="submit">
-    <a href="index.php">View Collection</a>
 </form>
+
+<a href="index.php">View Collection ></a>
+
 </body>
 
 <?php addEvent($_POST['event'], $_POST['year'], $_POST['place']); ?>

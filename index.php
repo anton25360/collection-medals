@@ -20,7 +20,7 @@ foreach ($events as $eventTable) {
     } elseif ($place == '3rd') {
         $message = ' 🥉';
     } else {
-        $message = ' 🤮';
+        $message = ' 💩';
     }
 
     echo '<p> Event: ' . $event . ', '. $year . '. You came ' . $place . $message . '</p>';
@@ -36,4 +36,4 @@ foreach ($events as $eventTable) {
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body> <a href="add.php">Add a new event</a> </body>
+<body> <a href="add.php">Add a new achievement ></a> </body>
