@@ -28,11 +28,12 @@ foreach ($events as $eventTable) {
 ?>
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>title</title> <!-- tab title -->
-    <link href="normalize.css" rel="stylesheet" type="text/css"> <!-- normalize file -->
-    <link href="style.css" rel="stylesheet" type="text/css"> <!-- css file -->
-    <link href="assets/webfonts/stylesheet.css" rel="stylesheet" type="text/css"> <!-- font file -->
+    <title>Collection</title>
+    <link href="assets/webfonts/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body> <a href="add.php">add a new event</a> </body>
+<body> <a href="add.php">Add a new event</a> </body>

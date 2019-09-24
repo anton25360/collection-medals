@@ -10,12 +10,20 @@
 
 <body>
 <form method="post">
-    Add an event:
-    <input type="text" name="event" placeholder="Cycling">
-    <input type="text" name="year" placeholder="2012">
-    <input type="text" name="place" placeholder="1st">
+    <label for="event"> Event name:
+        <input type="text" name="event" placeholder="Cycling">
+    </label>
+
+    <label for="year"> Year:
+        <input type="text" name="year" placeholder="2012">
+    </label>
+
+    <label for="place"> Position:
+        <input type="text" name="place" placeholder="1st">
+    </label>
+
     <input type="submit" name="submit">
-    <a href="index.php">go back to main page</a>
+    <a href="index.php">View Collection</a>
 </form>
 </body>
 
