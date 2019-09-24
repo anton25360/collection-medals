@@ -9,18 +9,14 @@
 </head>
 
 <body>
-<br>
-<div class="wrapper">
-    <form method="post">
-        <p2>Add an event:</p2>
-        <input type="text" name="event" placeholder="Cycling">
-        <input type="text" name="year" placeholder="2012">
-        <input type="text" name="place" placeholder="1st">
-        <input type="submit" name="submit">
-        <a href="index.php">go back to main page</a>
-    </form>
-</div>
-
+<form method="post">
+    Add an event:
+    <input type="text" name="event" placeholder="Cycling">
+    <input type="text" name="year" placeholder="2012">
+    <input type="text" name="place" placeholder="1st">
+    <input type="submit" name="submit">
+    <a href="index.php">go back to main page</a>
+</form>
 </body>
 
 <?php addEvent($_POST['event'], $_POST['year'], $_POST['place']); ?>
