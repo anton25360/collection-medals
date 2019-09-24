@@ -1,4 +1,5 @@
 <?php
+require "functions.php";
 
 $db = new PDO('mysql:host=db;dbname=collection','root','password');
 $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -24,16 +25,15 @@ foreach ($events as $eventTable) {
 
     echo '<p> Event: ' . $event . ', '. $year . '. You came ' . $place . $message . '</p>';
 }
-
 ?>
-<!DOCTYPE html>
-<head>
-    <title>title</title> <!-- tab title -->
-    <link href="normalize.css" rel="stylesheet" type="text/css"> <!-- normalize file -->
-    <link href="style.css" rel="stylesheet" type="text/css"> <!-- css file -->
-    <link href="assets/webfonts/stylesheet.css" rel="stylesheet" type="text/css"> <!-- font file -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Collection</title>
+    <link href="assets/webfonts/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-</body>
+<body> <a href="add.php">Add a new event</a> </body>
