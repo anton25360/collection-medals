@@ -1,10 +1,31 @@
 * {
 	box-sizing: border-box;
 	font-family: product_sansregular;
-	background-color: #cccccc;
 }
 
 body{
 	margin: 0;
 	padding: 0;
+}
+
+html{
+	background-color: gray;
+}
+
+p{
+	font-size: 50px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+form{
+	font-size: 20px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 10px;
 }
