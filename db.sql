@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.27)
 # Database: collection
-# Generation Time: 2019-09-23 13:01:56 +0000
+# Generation Time: 2019-09-24 12:53:28 +0000
 # ************************************************************
 
 
@@ -25,12 +25,25 @@
 
 CREATE TABLE `events` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `event` text NOT NULL,
-  `year` int(11) NOT NULL,
-  `place` int(11) NOT NULL,
+  `event` varchar(255) NOT NULL DEFAULT '',
+  `year` year(4) NOT NULL,
+  `place` varchar(5) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `events` WRITE;
+/*!40000 ALTER TABLE `events` DISABLE KEYS */;
+
+INSERT INTO `events` (`id`, `event`, `year`, `place`)
+VALUES
+	(1,'swimming','2008','2nd'),
+	(2,'cycling','2008','3rd'),
+	(3,'javelin','2008','8th'),
+	(4,'swimming','2012','1st'),
+	(5,'cycling','2012','1st');
+
+/*!40000 ALTER TABLE `events` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 
