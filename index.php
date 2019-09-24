@@ -1,5 +1,4 @@
 <?php
-//todo add functions file
 require "functions.php";
 
 $db = new PDO('mysql:host=db;dbname=collection','root','password');
@@ -26,10 +25,8 @@ foreach ($events as $eventTable) {
 
     echo '<p> Event: ' . $event . ', '. $year . '. You came ' . $place . $message . '</p>';
 }
-
-echo addEvent($_POST['event'],$_POST['year'],$_POST['place']);
-
 ?>
+
 <!DOCTYPE html>
 <head>
     <title>title</title> <!-- tab title -->
@@ -38,17 +35,4 @@ echo addEvent($_POST['event'],$_POST['year'],$_POST['place']);
     <link href="assets/webfonts/stylesheet.css" rel="stylesheet" type="text/css"> <!-- font file -->
 </head>
 
-<body>
-
-<br>
-<div class="wrapper">
-    <form method="post">
-        <p2>Add an event:</p2>
-        <input type="text" name="event" placeholder="Cycling">
-        <input type="text" name="year" placeholder="2012">
-        <input type="text" name="place" placeholder="1st">
-        <input type="submit" value="Add">
-    </form>
-</div>
-
-</body>
+<body> <a href="add.php">add a new event</a> </body>
