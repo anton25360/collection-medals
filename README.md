@@ -3,7 +3,7 @@
 
 # Olympic Medal Collection
 
-Showcase website designed to showcase participated olymic events, country & year, and medal acheived (G, S, B, other).
+Showcase website designed to display olymic events, year participated, and medal acheived (G, S, B, other).
 Uses a database to store & display this information indefinitely.
 
 
