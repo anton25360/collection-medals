@@ -15,14 +15,6 @@
         <input type="text" name="event" placeholder="Cycling">
     </label>
 
-    <label for="year"> Year:
-        <input type="text" name="year" placeholder="2012">
-    </label>
-
-    <label for="place"> Position:
-        <input type="text" name="place" placeholder="1st">
-    </label>
-
     <input type="submit" name="submit">
 </form>
 
@@ -30,4 +22,4 @@
 
 </body>
 
-<?php addEvent($_POST['event'], $_POST['year'], $_POST['place']); ?>
+<?php removeEvent($_POST['event']); ?>

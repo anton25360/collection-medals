@@ -18,3 +18,17 @@ function addEvent(string $event, int $year, string $place){
     $query->bindParam(':place', $place);
     $query ->execute();
 }
+
+/**
+ * Removes event from DB
+ *
+ * @param string $event the event string from form
+ */
+function removeEvent(string $event){
+
+    $db = new PDO('mysql:host=db;dbname=collection','root','password');
+    $query = $db -> prepare('DELETE FROM `events` WHERE `event`=:event');
+
+    $query->bindParam(':event', $event);
+    $query ->execute();
+}

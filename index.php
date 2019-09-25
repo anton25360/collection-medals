@@ -36,4 +36,7 @@ foreach ($events as $eventTable) {
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body> <a href="add.php">Add a new achievement ></a> </body>
+<body>
+<a href="add.php" id="addButton">Add a new achievement ></a>
+<a href="remove.php" id="deleteButton">< Remove an achievement</a>
+</body>

@@ -11,10 +11,8 @@ body{
 }
 
 html{
-	/*background-color: gray;*/
 	background-image: linear-gradient(to bottom, #000046 , #1CB5E0);
 	height: 100%;
-
 }
 
 p{
@@ -41,10 +39,28 @@ a{
 	border-radius: 20px;
 	padding: 25px;
 	position: absolute;
-	right: 0;
 	bottom: 0;
 	margin: 40px;
-	background-image: linear-gradient(to right, #0cebeb , #29ffc6);
 	text-decoration: none;
 	color: black;
+}
+
+#addButton{
+	background-image: linear-gradient(to right, #0cebeb , #29ffc6);
+	right: 0;
+}
+
+#deleteButton{
+	background-image: linear-gradient(to right, #e35d5b , #e53935);
+	left: 0;
+}
+
+
+#collectionButton{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	background-color: cornsilk;
+
+
 }
